@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in Html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+        }
+        table {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 55%;
+            border-radius: 6px;
+            border-bottom: 3px solid #349417 ;
+            box-shadow: 0px 0px 10px #5554548c;
+            
+        }
+        th, td {
+            /* border: 1px solid; */
+            padding: 10px; 
+            text-align: start;
+        }
+        thead {
+            margin: 3px;
+            /* padding-top: 5px; */
+            background-color: #349417; 
+            color: white;
+            /* border-radius: 10px; */
+        }
+        #heading {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        tr:nth-child(even){
+            margin: 5px;
+            background-color: #cfcccc;
+            color: #349417;
+            border-bottom: 3px solid #4e4c4c ;
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="0">
+        <thead>
+            <tr id="heading">
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88110</td>
+                <td>dcode</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sally</td>
+                <td>72400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
